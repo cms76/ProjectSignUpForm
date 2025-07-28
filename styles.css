@@ -1,0 +1,181 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+:root {
+    --logo-width: 25vw;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+a:link{
+    color:white;
+}
+
+body{
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(32,32, 32);
+    width: 100vw;
+    height: 100vh;   
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.container {
+    width: 68vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: space-around;
+    background-color: white;
+    margin: 0;
+}
+
+.logo-area{
+    height: 100%;
+    width: var(--logo-width);
+    background: url(images//halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-area{
+    height: 100%;
+    width: calc(100% - var(--logo-width));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249,250, 251);
+}
+
+
+
+.logo-area img {
+    aspect-ratio: 1 / 1;
+    height: 100px;
+}
+
+.logo-text{    
+    position: relative;
+    top: 12rem;
+    transform: translateY(-100px);
+    width: 100%;
+    font-family: norse-bold;
+    font-size: 100px;
+    color: white;
+    align-items: center;
+    display: flex; 
+    justify-content: center; 
+    opacity: 1;
+}
+
+.logo{
+    position: relative;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    top: 12rem;
+    height: 100px;
+}
+
+.credits {
+    color:white;
+    width: 20vw;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    padding: 1em 0;
+}
+
+.cta-area p {
+    padding: 0 2rem;
+}
+
+.cta-area p:last-child{
+    padding: 1rem 2rem;
+}
+
+/* Form styles */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.signup-form {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+fieldset{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-count: 2;  
+    margin: 0;
+    padding: 0;  
+    border:none;    
+}
+
+fieldset .form-left-col{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+fieldset .form-right-col{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+legend {
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+}
+
+label {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+ 
+}
+
+input {
+    display: block;
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(235,236, 239);
+    background-color: rgb(255,254, 254);
+    box-sizing: border-box;
+    font-size: 0.6rem;
+}
+
+input:focus, input:focus-visible{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.549);
+    border-color: rgb(206,97, 97);
+    outline: none;
+}
