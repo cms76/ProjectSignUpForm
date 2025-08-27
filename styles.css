@@ -176,7 +176,7 @@ input {
     box-sizing: border-box;    
 }
 
-input[type="password"] {  
+input[type="password"]:invalid {  
     display: block;
     width: 200px;
     height: 30px;
